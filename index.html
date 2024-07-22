@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password validator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            min-height: 100vh;
+            background-color: black;
+        }
+        #main{
+            /* width: 100%;
+            max-width: 500px; */
+            background-color: white;
+            padding:20px;
+            border-radius: 15px;
+           
+        }
+        h1{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        input{
+            width: 20rem;
+            height: 2rem;
+            padding: 10px;
+            border-radius: 25px;
+            
+        }
+        input{
+            background-color: rgb(255, 170, 170);
+        }
+        
+       
+        ul,li{
+       
+            font-size: 20px;
+            text-align: left;
+            /* padding: 0; */
+            line-height: 35px;
+            color: red;
+            font-weight: bolder;
+            
+        }
+        button{
+            height: 40px;
+            background-color: black;
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+<h1>Password validation</h1>
+<input type="text" id="input" placeholder="Enter password at least 8 character">
+<button id="btn">Save Password</button>
+
+<ul>
+    <h2 id="h2">Password should contain</h2>
+    <li id="Contain8">Contain 8 Character</li>
+    <li id="Uppercase">Contain Uppercase</li>
+    <li id="lowercase">Contain lowercase</li>
+    <li id="number">Contain number</li>
+    <li id="Special character">Contain Special character</li>
+   
+</ul>
+
+    </div>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
